@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #1f1f1f;
+  --gray: #f8f8f8;
+  --light-gray: #eeeeee;
+  --dark-gray: #bababa;
+  --orange: #f5690b;
+}
+
+.container {
+  max-width: 1060px;
+  padding: 0 10px;
+}
