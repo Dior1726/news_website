@@ -35,14 +35,120 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <nav class="container nav">
         <a href="/index.html">
           <img
             src="./assets/logo/logo.png"
             alt="News App"
           />
         </a>
-      </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="/"
+            >
+              Новости
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="/"
+            >
+              Блог
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <section class="bottom-header flex align-center">
+      <div class="container flex justify-between align-center">
+        <div class="search-bar">
+          <i class="ri-search-2-line"></i>
+          <input
+            type="text"
+            name="Search"
+            id="search"
+            placeholder="Поиск"
+          />
+        </div>
+
+        <div class="flex gap-3">
+          <button class="btn-square">
+            <i class="ri-add-line"></i>
+          </button>
+          <a
+            href="/profile.html"
+            class="profile-link"
+          >
+            <img
+              src="./assets/profileMini.png"
+              alt="Profile"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trend">
+      <div class="container">
+        <div class="flex align-center justify-between trend-header">
+          <h2 class="subtitle">
+            <i class="ri-fire-line subtitle-icon"></i>
+            В тренде
+          </h2>
+          <button class="btn-outline">Посмотреть все</button>
+        </div>
+
+        <div class="trend-content">
+          <div class="trend-card">
+            <img
+              src="./assets/Photo.png"
+              alt="newsPhoto"
+              class="trend-background"
+            />
+            <div class="card-header">Business</div>
+            <div class="card-bottom">
+              <h3 class="card-title">
+                3 простых шага для начала карьеры в Астане
+              </h3>
+              <div class="card-btn">
+                <button class="btn-down">
+                  <i class="ri-arrow-down-s-fill"></i>
+                </button>
+                <div class="count">344</div>
+                <button class="btn-up">
+                  <i class="ri-arrow-up-s-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="trend-card">
+            <img
+              src="./assets/Photo.png"
+              alt="newsPhoto"
+              class="trend-background"
+            />
+            <div class="card-header">Business</div>
+            <div class="card-bottom">
+              <h3 class="card-title">
+                3 простых шага для начала карьеры в Астане
+              </h3>
+              <div class="card-btn">
+                <button class="btn-down">
+                  <i class="ri-arrow-down-s-fill"></i>
+                </button>
+                <div class="count">2k</div>
+                <button class="btn-up">
+                  <i class="ri-arrow-up-s-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
