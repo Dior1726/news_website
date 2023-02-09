@@ -28,3 +28,29 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+const subscriptionSwiper = new Swiper('.subscription-swiper', {
+  // Optional parameters
+  slidesPerView: 2,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.subscription-btn__next',
+    prevEl: '.subscription-btn__prev',
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    }
+  }
+});

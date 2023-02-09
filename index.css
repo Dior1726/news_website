@@ -341,14 +341,14 @@ button {
   text-align: center;
 }
 
-.swiper {
+.category-section .swiper {
   margin: 0 auto;
   max-width: 1060px;
   padding: 0 10px;
   height: auto;
 }
 
-.swiper-slide {
+.category-section .swiper-slide {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -360,10 +360,120 @@ button {
   transition: all 0.2s ease;
 }
 
-.swiper-slide:hover {
+.category-section .swiper-slide:hover {
   background: var(--gray);
 }
 /* Category Section */
+
+/* Subscription Section */
+
+.subscription-section .swiper {
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 0 10px;
+}
+
+.subscription-card {
+  border: 1px solid var(--light-gray);
+  border-radius: 20px;
+}
+
+.subscription-card__header {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.subscription-card__header img {
+  width: 44px;
+  height: 44px;
+}
+
+.subscription-card__header h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.subscription-card__header span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--dark-gray);
+}
+
+.subscription-card__body {
+  margin-bottom: 20px;
+  padding: 20px 20px 0 20px;
+}
+
+.subscription-card__body img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.subscription-card__body h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.subscription-card__body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--dark-gray);
+}
+
+.subscription-header {
+  margin-bottom: 30px;
+}
+
+.subscription-card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.subscription-card__footer i {
+  color: var(--dark-gray);
+  font-size: 22px;
+}
+
+.subscription-card__footer span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.subscription-card__footer .comments {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.subscription-card__footer .buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.subscription-card__footer .count {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.subscription-card__footer .buttons button {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Subscription Section */
 
 /* Footer */
 .footer {
