@@ -1,6 +1,6 @@
 const swiper = new Swiper('.category-swiper', {
   // Optional parameters
-  slidesPerView: 6,
+  slidesPerView: 4,
   spaceBetween: 10,
 
   // Navigation arrows
@@ -20,9 +20,8 @@ const swiper = new Swiper('.category-swiper', {
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
-
     1024: {
       slidesPerView: 6,
     }

@@ -241,7 +241,7 @@ button {
   object-fit: cover;
 }
 
-.card-header {
+.trend-card .card-header {
   width: max-content;
   padding: 10px 20px;
   background: var(--white);
@@ -250,14 +250,14 @@ button {
   font-weight: 600;
 }
 
-.card-bottom {
+.trend-card .card-bottom {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 10px;
 }
 
-.card-title {
+.trend-card .card-title {
   width: 60%;
   font-size: 24px;
   font-weight: 700;
@@ -265,7 +265,7 @@ button {
   color: var(--white);
 }
 
-.card-btn {
+.trend-card .card-btn {
   height: 40px;
   display: flex;
   align-items: center;
@@ -275,7 +275,7 @@ button {
   border-radius: 10px;
 }
 
-.card-btn .count {
+.trend-card .card-btn .count {
   padding: 0 6px;
   font-weight: 600;
   color: var(--white);
@@ -283,7 +283,7 @@ button {
   border-right: 1px solid var(--white);
 }
 
-.card-btn button {
+.trend-card .card-btn button {
   background: transparent;
   margin: 0 6px;
   border: none;
@@ -292,7 +292,7 @@ button {
   justify-content: center;
 }
 
-.card-btn button i {
+.trend-card .card-btn button i {
   font-size: 20px;
   color: var(--white);
 }
@@ -474,6 +474,60 @@ button {
 }
 
 /* Subscription Section */
+
+/* Newest Section */
+
+.newest-header {
+  margin-bottom: 30px;
+}
+
+.newest-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.newest-card {
+  width: 320px;
+  height: 216px;
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.newest-card img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.newest-card .card-header {
+  width: max-content;
+  padding: 10px 20px;
+  background: var(--white);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.newest-card .card-title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+/* Newest Section */
 
 /* Footer */
 .footer {
