@@ -281,6 +281,7 @@ input:focus-within .search-bar {
   border-radius: 20px;
   border: 1px solid var(--light-gray);
   transition: all .2s ease;
+  color: initial;
 }
 
 .post-relatives .card:hover {

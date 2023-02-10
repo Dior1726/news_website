@@ -1,3 +1,14 @@
+const searchInput = document.querySelector("#search")
+const responseDiv = document.querySelector("#search-bar__response")
+
+searchInput.addEventListener('focus', () => {
+  responseDiv.style.display = "block"
+})
+
+searchInput.addEventListener('blur', () => {
+  responseDiv.style.display = "none"
+})
+
 const swiper = new Swiper('.category-swiper', {
   // Optional parameters
   slidesPerView: 4,
