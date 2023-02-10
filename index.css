@@ -44,6 +44,15 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  transition: all .2s ease;
+}
+
+.btn:hover {
+  background-color: var(--gray);
 }
 
 .flex {
@@ -248,6 +257,11 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all .2s ease;
+}
+
+.trend-card:hover .trend-background {
+  transform: scale(1.05);
 }
 
 .trend-card .card-header {
@@ -367,6 +381,7 @@ button {
   border: 1px solid var(--light-gray);
   border-radius: 20px;
   transition: all 0.2s ease;
+  color: initial;
 }
 
 .category-section .swiper-slide:hover {
@@ -386,6 +401,12 @@ button {
 .subscription-card {
   border: 1px solid var(--light-gray);
   border-radius: 20px;
+  color: initial;
+  transition: all .2s ease;
+}
+
+.subscription-card:hover {
+  background: var(--gray);
 }
 
 .subscription-card__header {
@@ -505,6 +526,9 @@ button {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  color: initial;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .newest-card img {
@@ -517,7 +541,11 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  transition: all .2s ease;
+}
+
+.newest-card:hover .newest-background {
+  transform: scale(1.05);
 }
 
 .newest-card .card-header {
@@ -573,6 +601,12 @@ button {
   border: 1px solid var(--light-gray);
   padding: 20px;
   border-radius: 20px;
+  color: initial;
+  transition: all .2s ease;
+}
+
+.business-card:hover {
+  background: var(--gray);
 }
 
 .business-content .card-header {
