@@ -1,694 +1,570 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <!-- Google Font -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
 
-    <!-- Swiper js css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Style css -->
-    <link
-      rel="stylesheet"
-      href="./index.css"
-    />
-    <title>News App</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="container nav">
-        <a href="/index.html">
-          <img
-            src="./assets/logo/logo.png"
-            alt="News App"
-          />
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              href="/"
-            >
-              Новости
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="/"
-            >
-              Блог
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Swiper js css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <section class="bottom-header flex align-center">
-      <div class="container flex justify-between align-center">
-        <div class="search-bar">
-          <i class="ri-search-2-line"></i>
-          <input
-            type="text"
-            name="Search"
-            id="search"
-            placeholder="Поиск"
-          />
-        </div>
+  <!-- Style css -->
+  <link rel="stylesheet" href="./index.css" />
+  <title>News App</title>
+</head>
 
-        <div class="flex gap-3">
-          <button class="btn-square">
-            <i class="ri-add-line"></i>
-          </button>
-          <a
-            href="/profile.html"
-            class="profile-link"
-          >
-            <img
-              src="./assets/profileMini.png"
-              alt="Profile"
-            />
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="/index.html">
+        <img src="./assets/logo/logo.png" alt="News App" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">
+            Новости
           </a>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            Блог
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="bottom-header flex align-center">
+    <div class="container flex justify-between align-center">
+      <div class="search-bar">
+        <i class="ri-search-2-line"></i>
+        <input type="text" name="Search" id="search" placeholder="Поиск" />
       </div>
-    </section>
 
-    <section class="trend">
-      <div class="container">
-        <div class="flex align-center justify-between trend-header">
-          <h2 class="subtitle">
-            <i class="ri-fire-line subtitle-icon"></i>
-            В тренде
-          </h2>
-          <button class="btn-outline">Посмотреть все</button>
-        </div>
-
-        <div class="trend-content">
-          <div class="trend-card">
-            <img
-              src="./assets/Photo.png"
-              alt="newsPhoto"
-              class="trend-background"
-            />
-            <div class="card-header">Business</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                3 простых шага для начала карьеры в Астане
-              </h3>
-              <div class="card-btn">
-                <button class="btn-down">
-                  <i class="ri-arrow-down-s-fill"></i>
-                </button>
-                <div class="count">344</div>
-                <button class="btn-up">
-                  <i class="ri-arrow-up-s-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="trend-card">
-            <img
-              src="./assets/Photo.png"
-              alt="newsPhoto"
-              class="trend-background"
-            />
-            <div class="card-header">Business</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                3 простых шага для начала карьеры в Астане
-              </h3>
-              <div class="card-btn">
-                <button class="btn-down">
-                  <i class="ri-arrow-down-s-fill"></i>
-                </button>
-                <div class="count">2k</div>
-                <button class="btn-up">
-                  <i class="ri-arrow-up-s-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="flex gap-3">
+        <button class="btn-square">
+          <i class="ri-add-line"></i>
+        </button>
+        <a href="/profile.html" class="profile-link">
+          <img src="./assets/profileMini.png" alt="Profile" />
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section
-      class="category-section"
-      style="display: none"
-    >
-      <div class="container">
-        <div class="flex align-center justify-between category-header">
-          <h2 class="subtitle">
-            <i class="ri-folder-line subtitle-icon"></i>
-            Категории
-          </h2>
-          <div class="flex gap-3">
-            <button class="btn-square btn-inactive">
-              <i class="ri-arrow-left-s-line"></i>
-            </button>
-            <button class="btn-square btn-active">
-              <i class="ri-arrow-right-s-line"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="category-content">
-          <div class="category-card">
-            <img
-              src="./assets/logo/student.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Образование</h6>
-          </div>
-
-          <div class="category-card">
-            <img
-              src="./assets/logo/cycle.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Спорт</h6>
-          </div>
-
-          <div class="category-card">
-            <img
-              src="./assets/logo/portfel.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Бизнес</h6>
-          </div>
-
-          <div class="category-card">
-            <img
-              src="./assets/logo/mask.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Культура</h6>
-          </div>
-
-          <div class="category-card">
-            <img
-              src="./assets/logo/list.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Политика</h6>
-          </div>
-
-          <div class="category-card">
-            <img
-              src="./assets/logo/smile.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Юмор</h6>
-          </div>
-        </div>
+  <section class="trend">
+    <div class="container">
+      <div class="flex align-center justify-between trend-header">
+        <h2 class="subtitle">
+          <i class="ri-fire-line subtitle-icon"></i>
+          В тренде
+        </h2>
+        <button class="btn-outline">Посмотреть все</button>
       </div>
-    </section>
 
-    <section class="category-section">
-      <div class="swiper category-swiper">
-        <div class="flex align-center justify-between category-header">
-          <h2 class="subtitle">
-            <i class="ri-folder-line subtitle-icon"></i>
-            Категории
-          </h2>
-          <div class="flex gap-3">
-            <button class="btn-square btn-prev">
-              <i class="ri-arrow-left-s-line"></i>
-            </button>
-            <button class="btn-square btn-next">
-              <i class="ri-arrow-right-s-line"></i>
-            </button>
+      <div class="trend-content">
+        <div class="trend-card">
+          <img src="./assets/Photo.png" alt="newsPhoto" class="trend-background" />
+          <div class="card-header">Business</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              3 простых шага для начала карьеры в Астане
+            </h3>
+            <div class="card-btn">
+              <button class="btn-down">
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <div class="count">344</div>
+              <button class="btn-up">
+                <i class="ri-arrow-up-s-fill"></i>
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/student.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Образование</h6>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/cycle.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Спорт</h6>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/portfel.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Бизнес</h6>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/mask.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Культура</h6>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/list.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Политика</h6>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/smile.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Юмор</h6>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/logo/smile.png"
-              alt="student"
-              class="category-card__img"
-            />
-            <h6 class="category-card__title">Юмор 2</h6>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="subscription-section">
-      <div class="subscription-swiper swiper">
-        <div class="flex align-center justify-between subscription-header">
-          <h2 class="subtitle">
-            <i class="ri-folder-line subtitle-icon"></i>
-            Подписки
-          </h2>
-          <div class="flex gap-3">
-            <button class="btn-square subscription-btn__prev">
-              <i class="ri-arrow-left-s-line"></i>
-            </button>
-            <button class="btn-square subscription-btn__next">
-              <i class="ri-arrow-right-s-line"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="swiper-wrapper">
-          <div class="swiper-slide subscription-card">
-            <div class="subscription-card__header">
-              <div>
-                <img
-                  src="./assets/logo/forbes.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h5>Forbes Kz</h5>
-                <span>2 часа назад</span>
-              </div>
-            </div>
-            <div class="subscription-card__body">
-              <img
-                src="./assets/newsPhoto.png"
-                alt=""
-              />
-              <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
-              <p>
-                Анализ Forbes USA показал, что отток денежных средств из Binance
-                сильнее, чем утверждал...
-              </p>
-            </div>
-            <div class="subscription-card__footer">
-              <div class="comments">
-                <i class="ri-chat-3-line"></i>
-                <span>9</span>
-              </div>
-              <div class="buttons">
-                <button class="btn-down">
-                  <i class="ri-arrow-down-s-fill"></i>
-                </button>
-                <div class="count">344</div>
-                <button class="btn-up">
-                  <i class="ri-arrow-up-s-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide subscription-card">
-            <div class="subscription-card__header">
-              <div>
-                <img
-                  src="./assets/logo/forbes.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h5>Forbes Kz</h5>
-                <span>2 часа назад</span>
-              </div>
-            </div>
-            <div class="subscription-card__body">
-              <img
-                src="./assets/newsPhoto.png"
-                alt=""
-              />
-              <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
-              <p>
-                Анализ Forbes USA показал, что отток денежных средств из Binance
-                сильнее, чем утверждал...
-              </p>
-            </div>
-            <div class="subscription-card__footer">
-              <div class="comments">
-                <i class="ri-chat-3-line"></i>
-                <span>9</span>
-              </div>
-              <div class="buttons">
-                <button class="btn-down">
-                  <i class="ri-arrow-down-s-fill"></i>
-                </button>
-                <div class="count">344</div>
-                <button class="btn-up">
-                  <i class="ri-arrow-up-s-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide subscription-card">
-            <div class="subscription-card__header">
-              <div>
-                <img
-                  src="./assets/logo/forbes.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h5>Forbes Kz</h5>
-                <span>2 часа назад</span>
-              </div>
-            </div>
-            <div class="subscription-card__body">
-              <img
-                src="./assets/newsPhoto.png"
-                alt=""
-              />
-              <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
-              <p>
-                Анализ Forbes USA показал, что отток денежных средств из Binance
-                сильнее, чем утверждал...
-              </p>
-            </div>
-            <div class="subscription-card__footer">
-              <div class="comments">
-                <i class="ri-chat-3-line"></i>
-                <span>9</span>
-              </div>
-              <div class="buttons">
-                <button>
-                  <i class="ri-arrow-down-s-fill"></i>
-                </button>
-                <div class="count">344</div>
-                <button>
-                  <i class="ri-arrow-up-s-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide subscription-card">
-            <div class="subscription-card__header">
-              <div>
-                <img
-                  src="./assets/logo/forbes.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h5>Forbes Kz</h5>
-                <span>2 часа назад</span>
-              </div>
-            </div>
-            <div class="subscription-card__body">
-              <img
-                src="./assets/newsPhoto.png"
-                alt=""
-              />
-              <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
-              <p>
-                Анализ Forbes USA показал, что отток денежных средств из Binance
-                сильнее, чем утверждал...
-              </p>
-            </div>
-            <div class="subscription-card__footer">
-              <div class="comments">
-                <i class="ri-chat-3-line"></i>
-                <span>9</span>
-              </div>
-              <div class="buttons">
-                <button>
-                  <i class="ri-arrow-down-s-fill"></i>
-                </button>
-                <div class="count">344</div>
-                <button>
-                  <i class="ri-arrow-up-s-fill"></i>
-                </button>
-              </div>
+        <div class="trend-card">
+          <img src="./assets/Photo.png" alt="newsPhoto" class="trend-background" />
+          <div class="card-header">Business</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              3 простых шага для начала карьеры в Астане
+            </h3>
+            <div class="card-btn">
+              <button class="btn-down">
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <div class="count">2k</div>
+              <button class="btn-up">
+                <i class="ri-arrow-up-s-fill"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="newest">
-      <div class="container">
-        <div class="flex align-center justify-between newest-header">
-          <h2 class="subtitle">
-            <i class="ri-folder-line subtitle-icon"></i>
-            Самые новые
-          </h2>
-          <button class="btn-outline">Посмотреть все</button>
+  <section class="category-section">
+    <div class="swiper category-swiper">
+      <div class="flex align-center justify-between category-header">
+        <h2 class="subtitle">
+          <i class="ri-folder-line subtitle-icon"></i>
+          Категории
+        </h2>
+        <div class="flex gap-3">
+          <button class="btn-square btn-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button class="btn-square btn-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/logo/student.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Образование</h6>
         </div>
 
-        <div class="newest-content">
-          <div class="newest-card">
-            <img
-              src="./assets/freezeNews.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Лайв</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
-              </h3>
+        <div class="swiper-slide">
+          <img src="./assets/logo/cycle.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Спорт</h6>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./assets/logo/portfel.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Бизнес</h6>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./assets/logo/mask.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Культура</h6>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./assets/logo/list.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Политика</h6>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./assets/logo/smile.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Юмор</h6>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./assets/logo/smile.png" alt="student" class="category-card__img" />
+          <h6 class="category-card__title">Юмор 2</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscription-section">
+    <div class="subscription-swiper swiper">
+      <div class="flex align-center justify-between subscription-header">
+        <h2 class="subtitle">
+          <i class="ri-folder-line subtitle-icon"></i>
+          Подписки
+        </h2>
+        <div class="flex gap-3">
+          <button class="btn-square subscription-btn__prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button class="btn-square subscription-btn__next">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide subscription-card">
+          <div class="subscription-card__header">
+            <div>
+              <img src="./assets/logo/forbes.png" alt="" />
+            </div>
+            <div>
+              <h5>Forbes Kz</h5>
+              <span>2 часа назад</span>
             </div>
           </div>
-
-          <div class="newest-card">
-            <img
-              src="./assets/sport.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Sport</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
-              </h3>
+          <div class="subscription-card__body">
+            <img src="./assets/newsPhoto.png" alt="" />
+            <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
+            <p>
+              Анализ Forbes USA показал, что отток денежных средств из Binance
+              сильнее, чем утверждал...
+            </p>
+          </div>
+          <div class="subscription-card__footer">
+            <div class="comments">
+              <i class="ri-chat-3-line"></i>
+              <span>9</span>
+            </div>
+            <div class="buttons">
+              <button class="btn-down">
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <div class="count">344</div>
+              <button class="btn-up">
+                <i class="ri-arrow-up-s-fill"></i>
+              </button>
             </div>
           </div>
+        </div>
 
-          <div class="newest-card">
-            <img
-              src="./assets/bus.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Лайв</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
-              </h3>
+        <div class="swiper-slide subscription-card">
+          <div class="subscription-card__header">
+            <div>
+              <img src="./assets/logo/b.png" alt="" />
+            </div>
+            <div>
+              <h5>vlast Kz</h5>
+              <span>2 часа назад</span>
             </div>
           </div>
-
-          <div class="newest-card">
-            <img
-              src="./assets/freezeNews.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Лайв</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
-              </h3>
+          <div class="subscription-card__body">
+            <img src="./assets/newsPhoto2.png" alt="" />
+            <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
+            <p>
+              Анализ Forbes USA показал, что отток денежных средств из Binance
+              сильнее, чем утверждал...
+            </p>
+          </div>
+          <div class="subscription-card__footer">
+            <div class="comments">
+              <i class="ri-chat-3-line"></i>
+              <span>9</span>
+            </div>
+            <div class="buttons">
+              <button class="btn-down">
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <div class="count">344</div>
+              <button class="btn-up">
+                <i class="ri-arrow-up-s-fill"></i>
+              </button>
             </div>
           </div>
+        </div>
 
-          <div class="newest-card">
-            <img
-              src="./assets/sport.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Sport</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
-              </h3>
+        <div class="swiper-slide subscription-card">
+          <div class="subscription-card__header">
+            <div>
+              <img src="./assets/logo/sun.png" alt="" />
+            </div>
+            <div>
+              <h5>Nur Kz</h5>
+              <span>2 часа назад</span>
             </div>
           </div>
-
-          <div class="newest-card">
-            <img
-              src="./assets/bus.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Лайв</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
-              </h3>
+          <div class="subscription-card__body">
+            <img src="./assets/newsPhoto.png" alt="" />
+            <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
+            <p>
+              Анализ Forbes USA показал, что отток денежных средств из Binance
+              сильнее, чем утверждал...
+            </p>
+          </div>
+          <div class="subscription-card__footer">
+            <div class="comments">
+              <i class="ri-chat-3-line"></i>
+              <span>9</span>
+            </div>
+            <div class="buttons">
+              <button>
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <div class="count">344</div>
+              <button>
+                <i class="ri-arrow-up-s-fill"></i>
+              </button>
             </div>
           </div>
+        </div>
 
-          <div class="newest-card">
-            <img
-              src="./assets/freezeNews.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Лайв</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
-              </h3>
+        <div class="swiper-slide subscription-card">
+          <div class="subscription-card__header">
+            <div>
+              <img src="./assets/logo/forbes.png" alt="" />
+            </div>
+            <div>
+              <h5>Forbes Kz</h5>
+              <span>2 часа назад</span>
             </div>
           </div>
-
-          <div class="newest-card">
-            <img
-              src="./assets/sport.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Sport</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
-              </h3>
-            </div>
+          <div class="subscription-card__body">
+            <img src="./assets/newsPhoto.png" alt="" />
+            <h5>Binance потерял $12 млрд менее чем за 60 дней</h5>
+            <p>
+              Анализ Forbes USA показал, что отток денежных средств из Binance
+              сильнее, чем утверждал...
+            </p>
           </div>
-
-          <div class="newest-card">
-            <img
-              src="./assets/bus.png"
-              alt="newsPhoto"
-              class="newest-background"
-            />
-            <div class="card-header">Лайв</div>
-            <div class="card-bottom">
-              <h3 class="card-title">
-                Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
-              </h3>
+          <div class="subscription-card__footer">
+            <div class="comments">
+              <i class="ri-chat-3-line"></i>
+              <span>9</span>
+            </div>
+            <div class="buttons">
+              <button>
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <div class="count">344</div>
+              <button>
+                <i class="ri-arrow-up-s-fill"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-logo">
-            <img
-              src="./assets/logo/logo.png"
-              alt="Logo"
-            />
+  <section class="newest">
+    <div class="container">
+      <div class="flex align-center justify-between newest-header">
+        <h2 class="subtitle">
+          <i class="ri-folder-line subtitle-icon"></i>
+          Самые новые
+        </h2>
+        <button class="btn-outline">Посмотреть все</button>
+      </div>
+
+      <div class="newest-content">
+        <div class="newest-card">
+          <img src="./assets/freezeNews.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
           </div>
+        </div>
 
-          <div class="footer-content">
-            <div class="footer-links">
-              <h6 class="footer-link__title">Новости</h6>
-              <a href="/">В тренде</a>
-              <a href="/">Категории</a>
-              <a href="/">Самые новые</a>
-            </div>
+        <div class="newest-card">
+          <img src="./assets/sport.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
 
-            <div class="footer-links">
-              <h6 class="footer-link__title">Блоги</h6>
-              <a href="/">В тренде</a>
-              <a href="/">Категории</a>
-              <a href="/">Самые новые</a>
-            </div>
+        <div class="newest-card">
+          <img src="./assets/bus.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
 
-            <div class="footer-links">
-              <h6 class="footer-link__title">О News</h6>
-              <a href="/">Политика конфиденциальности</a>
-              <a href="/">Пользовательское соглашение</a>
-              <a href="/">Контакты</a>
-            </div>
+        <div class="newest-card">
+          <img src="./assets/freezeNews.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/sport.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/bus.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/freezeNews.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/sport.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/bus.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">©2023 News.</div>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Swiper js  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
-  </body>
+  <section class="business">
+    <div class="container">
+      <div class="flex align-center justify-between business-header">
+        <h2 class="subtitle">
+          <div class="subtitle-icon__wrapper">
+            <img src="/assets/logo/portfel.png" alt="" />
+          </div>
+          Бизнес
+        </h2>
+        <button class="btn-outline">Посмотреть все</button>
+      </div>
+
+      <div class="business-content">
+        <div class="business-card">
+          <div class="card-header">
+            <img src="./assets/Photo1.png" alt="" />
+          </div>
+          <div class="card-body">
+            <h5>
+              Это коррупционные риски – бизнес о перспективе дополнительного
+              штрафа
+            </h5>
+            <p>10 минут назад</p>
+          </div>
+        </div>
+
+        <div class="business-card">
+          <div class="card-header">
+            <img src="./assets/newsPhoto2.png" alt="" />
+          </div>
+          <div class="card-body">
+            <h5>
+              Это коррупционные риски – бизнес о перспективе дополнительного
+              штрафа
+            </h5>
+            <p>10 минут назад</p>
+          </div>
+        </div>
+
+        <div class="business-card">
+          <div class="card-header">
+            <img src="./assets/Photo1.png" alt="" />
+          </div>
+          <div class="card-body">
+            <h5>
+              Это коррупционные риски – бизнес о перспективе дополнительного
+              штрафа
+            </h5>
+            <p>10 минут назад</p>
+          </div>
+        </div>
+
+        <div class="business-card">
+          <div class="card-header">
+            <img src="./assets/Photo1.png" alt="" />
+          </div>
+          <div class="card-body">
+            <h5>
+              Это коррупционные риски – бизнес о перспективе дополнительного
+              штрафа
+            </h5>
+            <p>10 минут назад</p>
+          </div>
+        </div>
+
+        <div class="business-card">
+          <div class="card-header">
+            <img src="./assets/newsPhoto2.png" alt="" />
+          </div>
+          <div class="card-body">
+            <h5>
+              Это коррупционные риски – бизнес о перспективе дополнительного
+              штрафа
+            </h5>
+            <p>10 минут назад</p>
+          </div>
+        </div>
+
+        <div class="business-card">
+          <div class="card-header">
+            <img src="./assets/Photo1.png" alt="" />
+          </div>
+          <div class="card-body">
+            <h5>
+              Это коррупционные риски – бизнес о перспективе дополнительного
+              штрафа
+            </h5>
+            <p>10 минут назад</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="./assets/logo/logo.png" alt="Logo" />
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-links">
+            <h6 class="footer-link__title">Новости</h6>
+            <a href="/">В тренде</a>
+            <a href="/">Категории</a>
+            <a href="/">Самые новые</a>
+          </div>
+
+          <div class="footer-links">
+            <h6 class="footer-link__title">Блоги</h6>
+            <a href="/">В тренде</a>
+            <a href="/">Категории</a>
+            <a href="/">Самые новые</a>
+          </div>
+
+          <div class="footer-links">
+            <h6 class="footer-link__title">О News</h6>
+            <a href="/">Политика конфиденциальности</a>
+            <a href="/">Пользовательское соглашение</a>
+            <a href="/">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">©2023 News.</div>
+    </div>
+  </footer>
+
+  <!-- Swiper js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>

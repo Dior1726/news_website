@@ -488,7 +488,6 @@ button {
 }
 
 .newest-card {
-  width: 320px;
   height: 216px;
   position: relative;
   z-index: 0;
@@ -528,6 +527,67 @@ button {
   line-height: 120%;
 }
 /* Newest Section */
+
+/* business Section */
+.business {
+  padding-bottom: 100px;
+}
+
+.business-header {
+  margin-bottom: 30px;
+}
+
+.business-header .subtitle-icon__wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light-gray);
+}
+
+.business-header .subtitle-icon__wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+.business-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.business-card {
+  border: 1px solid var(--light-gray);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.business-content .card-header {
+  margin-bottom: 20px;
+}
+
+.business-content .card-header img {
+  border-radius: 10px;
+}
+
+.business-content .card-body h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.business-content .card-body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--dark-gray);
+}
+
+
+/* business Section */
 
 /* Footer */
 .footer {
