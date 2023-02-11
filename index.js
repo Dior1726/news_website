@@ -1,6 +1,7 @@
 const searchInput = document.querySelector("#search")
 const responseDiv = document.querySelector("#search-bar__response")
 
+// Header input focus
 searchInput.addEventListener('focus', () => {
   responseDiv.style.display = "block"
 })
@@ -9,6 +10,7 @@ searchInput.addEventListener('blur', () => {
   responseDiv.style.display = "none"
 })
 
+// Swiper slides
 const swiper = new Swiper('.category-swiper', {
   // Optional parameters
   slidesPerView: 4,
@@ -64,3 +66,7 @@ const subscriptionSwiper = new Swiper('.subscription-swiper', {
     }
   }
 });
+
+// Profile Tabs
+
+const connectTabs = new Tabs();

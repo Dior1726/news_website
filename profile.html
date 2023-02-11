@@ -59,14 +59,94 @@
     </div>
   </section>
 
-  <section class="newest">
+  <section class="user-section">
+    <div class="container">
+      <div class="max-w-650 user-content">
+        <div class="user-avatar">
+          <img src="./assets/Avatarava.png" alt="">
+          <div class="avatar-action">
+            <button class="btn-edit">
+              Изменить фото
+            </button>
+            <button class="btn btn-remove">
+              <i class="ri-delete-bin-line"></i>
+              Удалить фото
+            </button>
+          </div>
+        </div>
+        <div class="avatar-info">
+          Добавьте свою фотографию (256х256 пикселей)
+        </div>
+        <div class="tabs-action">
+          <button class="btn-tab active" data-tab="information">
+            Информация
+          </button>
+          <button data-tab="news" class="btn-tab">
+            Мои новости
+          </button>
+          <button data-tab="information" class="btn-tab">
+            Мои блоги
+          </button>
+        </div>
+      </div>
+
+      <div class="max-w-650 b-tab active" id="information">
+        <div class="user-form">
+          <div class="form-control">
+            <label for="userName">Имя</label>
+            <input type="text" placeholder="Бауыржан" name="userName">
+          </div>
+          <div class="form-control">
+            <label for="userLastName">Фамилия</label>
+            <input type="text" name="userLastName" placeholder="Батырбалинов">
+          </div>
+        </div>
+
+        <div class="user-form">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" placeholder="name@mail.kz" name="email">
+          </div>
+          <div class="form-control">
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" placeholder="+ 7 (123) 456 7890">
+          </div>
+        </div>
+
+        <div class="user-form">
+          <h5>
+            Изменить пароль
+          </h5>
+          <div class="form-control" style="margin-bottom: 40px;">
+            <label>Текущий пароль</label>
+            <input type="password" placeholder="******">
+          </div>
+          <div class="form-control">
+            <label>Новый пароль</label>
+            <input type="password" placeholder="******">
+          </div>
+          <div class="form-control">
+            <label>Подтвердите новый пароль</label>
+            <input type="password" placeholder="******">
+          </div>
+          <div class="form-action">
+            <button>
+              Сохранить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newest b-tab" id="news">
     <div class="container">
       <div class="flex align-center justify-between newest-header">
         <h2 class="subtitle">
           <i class="ri-folder-line subtitle-icon"></i>
           Самые новые
         </h2>
-        <button class="btn-outline">Посмотреть все</button>
+        <button class="btn btn-outline">Посмотреть все</button>
       </div>
 
       <div class="newest-content">
@@ -201,6 +281,7 @@
 
   <!-- Swiper js  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./tabs.js"></script>
   <script src="./index.js"></script>
 </body>
 

@@ -210,6 +210,156 @@ button {
 
 /* Header */
 
+/* Tabs Style */
+.b-tab {
+  display: none;
+}
+
+.b-tab.active {
+  display: block;
+}
+
+/* Tabs Style */
+
+/* User */
+.max-w-650 {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.user-content {
+  padding-bottom: 30px;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.user-avatar img {
+  width: 128px;
+  height: 128px;
+}
+
+.avatar-action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-edit {
+  padding: 12px 24px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.btn-remove {
+  padding: 12px 24px;
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-remove i {
+  color: #F50B0B;
+}
+
+.avatar-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--dark-gray);
+  margin-bottom: 40px;
+}
+
+.tabs-action {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-tab {
+  padding: 12px 24px;
+  background: var(--light-gray);
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.user-form {
+  padding: 40px 0;
+  border-top: 1px solid var(--light-gray);
+}
+
+.user-form .form-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-form .form-control:last-child {
+  margin-bottom: 0;
+}
+
+.user-form .form-control label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.user-form .form-control input {
+  width: 330px;
+  background: var(--white);
+  padding: 12px 18px;
+  border: 1px solid var(--light-gray);
+  outline: none;
+  transition: all .2s ease;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.user-form .form-control input:focus {
+  border-color: var(--orange);
+}
+
+.user-form h5 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.form-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.form-action button {
+  padding: 12px 24px;
+  background: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--white);
+  border-radius: 10px;
+}
+
+/* User */
+
 
 /* Newest Section */
 
