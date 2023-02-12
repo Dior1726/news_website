@@ -1,3 +1,21 @@
+const searchInput = document.querySelector("#search")
+const responseDiv = document.querySelector("#search-bar__response")
+const modal = document.querySelector("#modal")
+const showModalBtn = document.querySelector("#show-modal")
+const hideModalBtn = document.querySelector("#hide-modal")
+const profileBtn = document.querySelector("#profile-btn")
+const profileMenu = document.querySelector("#profile-menu")
+
+// Header input focus
+searchInput.addEventListener('focus', () => {
+  responseDiv.style.display = "block"
+})
+
+searchInput.addEventListener('blur', () => {
+  responseDiv.style.display = "none"
+})
+
+// Swiper slides
 const swiper = new Swiper('.category-swiper', {
   // Optional parameters
   slidesPerView: 4,
@@ -53,3 +71,35 @@ const subscriptionSwiper = new Swiper('.subscription-swiper', {
     }
   }
 });
+
+// Profile Tabs
+
+const connectTabs = new Tabs();
+
+// Modal fucntions
+const showModal = () => {
+  if (modal.classList.contains('hide')) {
+    modal.classList.remove('hide')
+  }
+}
+
+const hideModal = () => {
+  if (!modal.classList.contains('hide')) {
+    modal.classList.add('hide')
+  }
+}
+
+showModalBtn.addEventListener('click', showModal)
+hideModalBtn.addEventListener('click', hideModal)
+
+// profile button
+
+const toggleProfileMenu = () => {
+  if (profileMenu.classList.contains('show')) {
+    profileMenu.classList.remove('show')
+  } else {
+    profileMenu.classList.add('show')
+  }
+}
+
+profileBtn.addEventListener('click', toggleProfileMenu)

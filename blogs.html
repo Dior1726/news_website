@@ -45,18 +45,74 @@
     <div class="container flex justify-between align-center">
       <div class="search-bar">
         <i class="ri-search-2-line"></i>
-        <input type="text" name="Search" id="search" placeholder="Поиск" />
+        <input type="text" class="search-bar__input" name="Search" id="search" placeholder="Поиск" />
+        <div class="search-bar__response" id="search-bar__response">
+          <div class="response-item">
+            <div class="response-item__title">Новости</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Блоги</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Издания</div>
+            <div class="response-item__text">NUR.KZ</div>
+            <div class="response-item__text">Forbes</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Авторы</div>
+            <div class="response-item__text">Бауыржан Батырбалинов</div>
+            <div class="response-item__text">Руслан Абилкайыров</div>
+          </div>
+        </div>
       </div>
 
       <div class="flex gap-3">
-        <button class="btn-square">
+        <button class="btn btn-square" id="show-modal">
           <i class="ri-add-line"></i>
         </button>
-        <a href="./profile.html" class="profile-link">
+        <div class="profile-link" id="profile-btn">
           <img src="./assets/profileMini.png" alt="Profile" />
-        </a>
+
+          <div class="profile-menu" id="profile-menu">
+            <div class="profile-menu__item">
+              <a href="./profile.html" class="menu-item">
+                <i class="ri-user-line"></i>
+                Профиль
+              </a>
+              <a href="/" class="menu-item">
+                <i class="ri-newspaper-line"></i>
+                Мои новости
+              </a>
+              <a href="/" class="menu-item">
+                <i class="ri-edit-box-line"></i>
+                Мой блог
+              </a>
+            </div>
+            <div class="profile-menu__item">
+              <a href="/" class="menu-item">
+                <i class="ri-shield-check-line"></i>
+                Соглашения
+              </a>
+              <a href="/" class="menu-item">
+                <i class="ri-question-line"></i>
+                Помощь
+              </a>
+            </div>
+            <div class="profile-menu__item">
+              <a href="/" class="menu-item">
+                <i class="ri-logout-box-r-line"></i>
+                Выйти
+              </a>
+            </div>
+          </div>
+          </>
+        </div>
       </div>
-    </div>
   </section>
 
   <section class="post-section">
@@ -243,37 +299,42 @@
                   начальник)
                 </div>
               </div>
+              <div class="comment-load">
+                <button>
+                  Показать все
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="post-relatives">
-          <div class="card">
+          <a href="/" class="card">
             <h5 class="card-title">
               Грету Тунберг полиция унесла на руках
             </h5>
             <p class="card-body">
               На последнем эко-протесте в небольшой деревушке в Германии Грета Тунберг была замечена...
             </p>
-          </div>
+          </a>
 
-          <div class="card">
+          <a href="/" class="card">
             <h5 class="card-title">
               Грету Тунберг полиция унесла на руках
             </h5>
             <p class="card-body">
               На последнем эко-протесте в небольшой деревушке в Германии Грета Тунберг была замечена...
             </p>
-          </div>
+          </a>
 
-          <div class="card">
+          <a href="/" class="card">
             <h5 class="card-title">
               Грету Тунберг полиция унесла на руках
             </h5>
             <p class="card-body">
               На последнем эко-протесте в небольшой деревушке в Германии Грета Тунберг была замечена...
             </p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -315,8 +376,58 @@
     </div>
   </footer>
 
+  <div class="modal hide" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="hide-modal">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+          Добавить новость
+        </h5>
+        <div class="modal-file">
+          <label for="file-upload">
+            <span class="file-text">Загрузите изображение новости</span>
+            <i class="ri-camera-line"></i>
+            <span class="file-info">Загрузите изображение новости</span>
+          </label>
+          <input id="file-upload" type="file" />
+        </div>
+        <div class="modal-form">
+          <label>Заголовок</label>
+          <input type="text" placeholder="Введите заголовок">
+        </div>
+        <div class="modal-form">
+          <label>Категория</label>
+          <select>
+            <option value="" disabled>Выберите</option>
+            <option value="business">Бизнес</option>
+            <option value="sport">Спорт</option>
+            <option value="live">Лайв</option>
+          </select>
+        </div>
+        <div class="modal-form">
+          <label>Текст</label>
+          <textarea rows="6"></textarea>
+        </div>
+        <div class="modal-form">
+          <label>Тэги</label>
+          <input type="text" placeholder="Добавьте тэг...">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button>
+          Добавить
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Swiper js  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./tabs.js"></script>
   <script src="./index.js"></script>
 </body>
 

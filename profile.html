@@ -45,28 +45,164 @@
     <div class="container flex justify-between align-center">
       <div class="search-bar">
         <i class="ri-search-2-line"></i>
-        <input type="text" name="Search" id="search" placeholder="Поиск" />
+        <input type="text" class="search-bar__input" name="Search" id="search" placeholder="Поиск" />
+        <div class="search-bar__response" id="search-bar__response">
+          <div class="response-item">
+            <div class="response-item__title">Новости</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Блоги</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Издания</div>
+            <div class="response-item__text">NUR.KZ</div>
+            <div class="response-item__text">Forbes</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Авторы</div>
+            <div class="response-item__text">Бауыржан Батырбалинов</div>
+            <div class="response-item__text">Руслан Абилкайыров</div>
+          </div>
+        </div>
       </div>
 
       <div class="flex gap-3">
-        <button class="btn-square">
+        <button class="btn btn-square" id="show-modal">
           <i class="ri-add-line"></i>
         </button>
-        <a href="./profile.html" class="profile-link">
+        <div class="profile-link" id="profile-btn">
           <img src="./assets/profileMini.png" alt="Profile" />
-        </a>
+
+          <div class="profile-menu" id="profile-menu">
+            <div class="profile-menu__item">
+              <a href="./profile.html" class="menu-item">
+                <i class="ri-user-line"></i>
+                Профиль
+              </a>
+              <a href="/" class="menu-item">
+                <i class="ri-newspaper-line"></i>
+                Мои новости
+              </a>
+              <a href="/" class="menu-item">
+                <i class="ri-edit-box-line"></i>
+                Мой блог
+              </a>
+            </div>
+            <div class="profile-menu__item">
+              <a href="/" class="menu-item">
+                <i class="ri-shield-check-line"></i>
+                Соглашения
+              </a>
+              <a href="/" class="menu-item">
+                <i class="ri-question-line"></i>
+                Помощь
+              </a>
+            </div>
+            <div class="profile-menu__item">
+              <a href="/" class="menu-item">
+                <i class="ri-logout-box-r-line"></i>
+                Выйти
+              </a>
+            </div>
+          </div>
+          </>
+        </div>
+      </div>
+  </section>
+
+  <section class="user-section">
+    <div class="container">
+      <div class="max-w-650 user-content">
+        <div class="user-avatar">
+          <img src="./assets/Avatarava.png" alt="">
+          <div class="avatar-action">
+            <button class="btn-edit">
+              Изменить фото
+            </button>
+            <button class="btn btn-remove">
+              <i class="ri-delete-bin-line"></i>
+              Удалить фото
+            </button>
+          </div>
+        </div>
+        <div class="avatar-info">
+          Добавьте свою фотографию (256х256 пикселей)
+        </div>
+        <div class="tabs-action">
+          <button class="btn-tab active" data-tab="information">
+            Информация
+          </button>
+          <button data-tab="news" class="btn-tab">
+            Мои новости
+          </button>
+          <button data-tab="blog" class="btn-tab">
+            Мои блоги
+          </button>
+        </div>
+      </div>
+
+      <div class="max-w-650 b-tab active" id="information">
+        <div class="user-form">
+          <div class="form-control">
+            <label for="userName">Имя</label>
+            <input type="text" placeholder="Бауыржан" name="userName">
+          </div>
+          <div class="form-control">
+            <label for="userLastName">Фамилия</label>
+            <input type="text" name="userLastName" placeholder="Батырбалинов">
+          </div>
+        </div>
+
+        <div class="user-form">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" placeholder="name@mail.kz" name="email">
+          </div>
+          <div class="form-control">
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" placeholder="+ 7 (123) 456 7890">
+          </div>
+        </div>
+
+        <div class="user-form">
+          <h5>
+            Изменить пароль
+          </h5>
+          <div class="form-control" style="margin-bottom: 40px;">
+            <label>Текущий пароль</label>
+            <input type="password" placeholder="******">
+          </div>
+          <div class="form-control">
+            <label>Новый пароль</label>
+            <input type="password" placeholder="******">
+          </div>
+          <div class="form-control">
+            <label>Подтвердите новый пароль</label>
+            <input type="password" placeholder="******">
+          </div>
+          <div class="form-action">
+            <button>
+              Сохранить
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="newest">
+  <section class="newest b-tab" id="news">
     <div class="container">
       <div class="flex align-center justify-between newest-header">
         <h2 class="subtitle">
           <i class="ri-folder-line subtitle-icon"></i>
           Самые новые
         </h2>
-        <button class="btn-outline">Посмотреть все</button>
+        <button class="btn btn-outline">Посмотреть все</button>
       </div>
 
       <div class="newest-content">
@@ -163,6 +299,110 @@
     </div>
   </section>
 
+  <section class="newest b-tab" id="blog">
+    <div class="container">
+      <div class="flex align-center justify-between newest-header">
+        <h2 class="subtitle">
+          <i class="ri-folder-line subtitle-icon"></i>
+          Мои блоги
+        </h2>
+        <button class="btn btn-outline">Посмотреть все</button>
+      </div>
+
+      <div class="newest-content">
+        <div class="newest-card">
+          <img src="./assets/Photo12.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/Photo2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/newsPhoto2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/freezeNews.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/sport.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/bus.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/Photo12.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/Photo2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/newsPhoto2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -199,8 +439,58 @@
     </div>
   </footer>
 
+  <div class="modal hide" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="hide-modal">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+          Добавить новость
+        </h5>
+        <div class="modal-file">
+          <label for="file-upload">
+            <span class="file-text">Загрузите изображение новости</span>
+            <i class="ri-camera-line"></i>
+            <span class="file-info">Загрузите изображение новости</span>
+          </label>
+          <input id="file-upload" type="file" />
+        </div>
+        <div class="modal-form">
+          <label>Заголовок</label>
+          <input type="text" placeholder="Введите заголовок">
+        </div>
+        <div class="modal-form">
+          <label>Категория</label>
+          <select>
+            <option value="" disabled>Выберите</option>
+            <option value="business">Бизнес</option>
+            <option value="sport">Спорт</option>
+            <option value="live">Лайв</option>
+          </select>
+        </div>
+        <div class="modal-form">
+          <label>Текст</label>
+          <textarea rows="6"></textarea>
+        </div>
+        <div class="modal-form">
+          <label>Тэги</label>
+          <input type="text" placeholder="Добавьте тэг...">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button>
+          Добавить
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Swiper js  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./tabs.js"></script>
   <script src="./index.js"></script>
 </body>
 
