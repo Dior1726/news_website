@@ -296,312 +296,317 @@ button {
 
 /* Header */
 
-/* Post section */
-
-.post-section {
-  padding: 60px 0 100px;
+/* Tabs Style */
+.b-tab {
+  display: none;
 }
 
-.post-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 120%;
-  margin-bottom: 30px;
+.b-tab.active {
+  display: block;
 }
 
-.post-img {
-  margin-bottom: 30px;
+/* Tabs Style */
+
+/* User */
+.max-w-650 {
+  max-width: 650px;
   width: 100%;
-  height: 453px;
+  margin: 0 auto;
 }
 
-.post-img img {
-  border-radius: 10px;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.post-content {
-  display: grid;
-  grid-template-columns: 1fr 326px;
+.user-avatar {
+  display: flex;
+  align-items: center;
   gap: 30px;
+  margin-bottom: 20px;
 }
 
-.post-info {
-  margin-bottom: 30px;
+.user-avatar img {
+  width: 128px;
+  height: 128px;
 }
 
-.post-info span {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: var(--dark-gray);
-}
-
-.post-info p {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-}
-
-.post-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-}
-
-.post-relatives {
+.avatar-action {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
-.post-relatives .card {
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid var(--light-gray);
-  transition: all .2s ease;
-  color: initial;
+.user-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.post-relatives .card:hover {
-  background: var(--gray);
-}
-
-.post-relatives .card-title {
+.user-info h4 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 120%;
-  margin-bottom: 10px;
 }
 
-.post-relatives .card-body {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: var(--dark-gray);
-}
-
-.post-author {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.post-author__user {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.post-author__user img {
-  width: 44px;
-  height: 44px;
-}
-
-.post-author__user h5 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-}
-
-.post-author__actions {
-  display: flex;
-  align-items: center;
-}
-
-.post-author__actions .btn-history {
-  height: 40px;
-  padding: 0 20px;
-  background: var(--black);
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 120%;
-  color: var(--white);
-  margin-left: 20px;
-}
-
-.post-author__actions button {
-  background: transparent;
+.user-info button {
+  padding: 12px 24px;
+  color: white;
+  background: var(--orange);
   border: none;
+  border-radius: 10px;
+}
+
+.user-info__count {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.user-info__count .count {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.btn-edit {
+  padding: 12px 24px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.btn-remove {
+  padding: 12px 24px;
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  gap: 6px;
 }
 
-.post-author__actions button i {
-  font-size: 20px;
+.btn-remove i {
+  color: #F50B0B;
+}
+
+.avatar-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
   color: var(--dark-gray);
+  margin-bottom: 40px;
 }
 
-.post-author__actions .count {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.post-tags {
+.tabs-action {
   display: flex;
   gap: 10px;
-  padding: 40px 0 60px;
-  border-bottom: 1px solid var(--light-gray);
+  align-items: center;
+  padding-bottom: 30px;
 }
 
-.post-tags__btn {
-  padding: 10px 20px;
-  background: #FFFFFF;
+.btn-tab {
+  padding: 12px 24px;
+  background: var(--light-gray);
   border-radius: 10px;
-  border: 1px solid var(--light-gray);
-  transition: all .2s ease;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  border: 1px solid transparent;
 }
 
-.post-tags__btn:hover {
-  background: var(--gray);
+.btn-tab.active {
+  background: var(--white);
+  border: 1px solid var(--orange);
 }
 
-.post-comments {
-  padding-top: 60px;
-  width: 100%;
+.user-form {
+  padding: 40px 0;
+  border-top: 1px solid var(--light-gray);
 }
 
-.post-comments__header {
+.user-form .form-control {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.post-comments__header i {
-  font-size: 24px;
-  color: var(--dark-gray);
+.user-form .form-control:last-child {
+  margin-bottom: 0;
 }
 
-.post-comments__header h2 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 120%;
-}
-
-.post-comments__header span {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 120%;
-  color: var(--dark-gray);
-}
-
-.post-comments__header div {
+.user-form .form-control label {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 120%;
 }
 
-.post-comments__header .ri-arrow-down-s-line {
-  color: var(--black);
-}
-
-.post-comments__form {
-  margin-bottom: 30px;
-  display: flex;
-}
-
-.post-comments__form input {
-  width: 100%;
+.user-form .form-control input {
+  width: 330px;
+  background: var(--white);
   padding: 12px 18px;
   border: 1px solid var(--light-gray);
-  border-radius: 10px;
   outline: none;
+  transition: all .2s ease;
+  border-radius: 10px;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 120%;
 }
 
-.post-comments__form input:focus {
+.user-form .form-control input:focus {
   border-color: var(--orange);
 }
 
-.post-comments__body .comment-item {
+.user-form h5 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.form-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.form-action button {
+  padding: 12px 24px;
+  background: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--white);
+  border-radius: 10px;
+}
+
+/* User */
+
+
+/* Newest Section */
+
+.newest {
+  padding-bottom: 100px;
+}
+
+.newest-header {
   margin-bottom: 30px;
 }
 
-.post-comments__body .comment-header {
+.newest-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.newest-card {
+  height: 216px;
+  position: relative;
+  z-index: 0;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  flex-direction: column;
 }
 
-.post-comments__body .comment-user {
+.newest-card img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.newest-card .card-header {
+  width: max-content;
+  padding: 10px 20px;
+  background: var(--white);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.newest-card .card-title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+/* Newest Section */
+
+/* business Section */
+.business {
+  padding-bottom: 100px;
+}
+
+.business-header {
+  margin-bottom: 30px;
+}
+
+.business-header .subtitle-icon__wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  border: 1px solid var(--light-gray);
 }
 
-.post-comments__body .comment-user img {
+.business-header .subtitle-icon__wrapper img {
   width: 24px;
   height: 24px;
 }
 
-.post-comments__body .comment-user h5 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
+.business-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-.post-comments__body .comment-user p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 140%;
-  color: var(--dark-gray);
+.business-card {
+  border: 1px solid var(--light-gray);
+  padding: 20px;
+  border-radius: 20px;
+  color: initial;
+  transition: all .2s ease;
 }
 
-.post-comments__body .comment-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.business-card:hover {
+  background: var(--gray);
 }
 
-.post-comments__body .comment-actions button {
-  background: transparent;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
+.business-content .card-header {
+  margin-bottom: 20px;
 }
 
-.post-comments__body .comment-actions button i {
-  font-size: 20px;
-  color: var(--dark-gray);
-}
-
-.post-comments__body .comment-actions .count {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.comment-load {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.comment-load button {
-  height: 40px;
-  padding: 0 20px;
-  background: var(--black);
+.business-content .card-header img {
   border-radius: 10px;
-  font-weight: 600;
-  font-size: 16px;
+}
+
+.business-content .card-body h5 {
+  font-weight: 700;
+  font-size: 18px;
   line-height: 120%;
-  color: var(--white);
-  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.business-content .card-body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--dark-gray);
 }
 
 
+/* business Section */
 
-/* Post section */
 
 /* Footer */
 .footer {
@@ -808,15 +813,12 @@ input[type="file"] {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-  .post-content {
-    grid-template-columns: 1fr;
-  }
 
-  .post-relatives {
-    display: grid;
+@media screen and (max-width: 768px) {
+
+  .newest-content,
+  .business-content {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
   }
 }
 
@@ -829,18 +831,23 @@ input[type="file"] {
     padding: 0 15px;
   }
 
-  .post-relatives {
-    grid-template-columns: 1fr;
+  .tabs-action,
+  .user-avatar {
+    flex-wrap: wrap;
   }
 
-  .post-comments__header {
-    flex-wrap: wrap;
+  .user-form .form-control {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     gap: 10px;
   }
 
-  .trend-content,
-  .newest-content,
-  .business-content {
+  .user-form .form-control input {
+    width: auto;
+  }
+
+  .newest-content {
     grid-template-columns: 1fr;
   }
 
