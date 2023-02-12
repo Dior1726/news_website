@@ -208,6 +208,50 @@ button {
   width: 44px;
   height: 44px;
   display: block;
+  position: relative;
+}
+
+.profile-menu {
+  width: 240px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  z-index: 10;
+  color: initial;
+  overflow: hidden;
+  display: none;
+}
+
+.profile-menu.show {
+  display: block;
+}
+
+.profile-menu__item {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.profile-menu__item:last-child {
+  border: none;
+}
+
+.menu-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  transition: all .2s ease;
+  color: initial;
+}
+
+.menu-item:hover {
+  background: var(--gray);
 }
 
 .bottom-header .profile-link img {
@@ -521,6 +565,153 @@ button {
 
 /* Footer */
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.modal.hide {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 620px;
+  width: 100%;
+  min-width: 300px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
+  z-index: 1001;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
+}
+
+.modal-header button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+}
+
+.modal-body {
+  padding: 0 60px;
+  flex-grow: 1;
+}
+
+.modal-body h5 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.modal-file {
+  margin-bottom: 40px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.modal-file label {
+  padding: 20px;
+  background: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modal-file label span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--dark-gray);
+}
+
+.modal-file label i {
+  font-size: 48px;
+}
+
+.modal-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-form label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--dark-gray);
+}
+
+.modal-form input {
+  padding: 12px 18px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  outline-color: var(--orange);
+}
+
+.modal-form select {
+  padding: 12px 18px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  outline-color: var(--orange);
+}
+
+.modal-form textarea {
+  padding: 12px 18px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  outline-color: var(--orange);
+}
+
+.modal-header button i {
+  font-size: 22px;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-footer button {
+  padding: 12px 24px;
+  background: var(--orange);
+  border-radius: 10px;
+  color: var(--white);
+  border-color: transparent;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -568,6 +759,10 @@ button {
   .footer-content {
     flex-wrap: wrap;
     gap: 50px;
+  }
+
+  .modal-body {
+    padding: 0 20px;
   }
 }
 
