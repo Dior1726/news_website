@@ -45,11 +45,34 @@
     <div class="container flex justify-between align-center">
       <div class="search-bar">
         <i class="ri-search-2-line"></i>
-        <input type="text" name="Search" id="search" placeholder="Поиск" />
+        <input type="text" class="search-bar__input" name="Search" id="search" placeholder="Поиск" />
+        <div class="search-bar__response" id="search-bar__response">
+          <div class="response-item">
+            <div class="response-item__title">Новости</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Блоги</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Издания</div>
+            <div class="response-item__text">NUR.KZ</div>
+            <div class="response-item__text">Forbes</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Авторы</div>
+            <div class="response-item__text">Бауыржан Батырбалинов</div>
+            <div class="response-item__text">Руслан Абилкайыров</div>
+          </div>
+        </div>
       </div>
 
       <div class="flex gap-3">
-        <button class="btn-square">
+        <button class="btn btn-square">
           <i class="ri-add-line"></i>
         </button>
         <a href="./profile.html" class="profile-link">
@@ -243,6 +266,11 @@
                   начальник)
                 </div>
               </div>
+              <div class="comment-load">
+                <button>
+                  Показать все
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -317,6 +345,7 @@
 
   <!-- Swiper js  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./tabs.js"></script>
   <script src="./index.js"></script>
 </body>
 

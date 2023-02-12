@@ -72,7 +72,7 @@
       </div>
 
       <div class="flex gap-3">
-        <button class="btn btn-square">
+        <button class="btn btn-square" id="show-modal">
           <i class="ri-add-line"></i>
         </button>
         <a href="./profile.html" class="profile-link">
@@ -585,8 +585,58 @@
     </div>
   </footer>
 
+  <div class="modal hide" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="hide-modal">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+          Добавить новость
+        </h5>
+        <div class="modal-file">
+          <label for="file-upload">
+            <span class="file-text">Загрузите изображение новости</span>
+            <i class="ri-camera-line"></i>
+            <span class="file-info">Загрузите изображение новости</span>
+          </label>
+          <input id="file-upload" type="file" />
+        </div>
+        <div class="modal-form">
+          <label>Заголовок</label>
+          <input type="text" placeholder="Введите заголовок">
+        </div>
+        <div class="modal-form">
+          <label>Категория</label>
+          <select>
+            <option value="" disabled>Выберите</option>
+            <option value="business">Бизнес</option>
+            <option value="sport">Спорт</option>
+            <option value="live">Лайв</option>
+          </select>
+        </div>
+        <div class="modal-form">
+          <label>Текст</label>
+          <textarea rows="6"></textarea>
+        </div>
+        <div class="modal-form">
+          <label>Тэги</label>
+          <input type="text" placeholder="Добавьте тэг...">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button>
+          Добавить
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Swiper js  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./tabs.js"></script>
   <script src="./index.js"></script>
 </body>
 

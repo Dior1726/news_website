@@ -1,5 +1,8 @@
 const searchInput = document.querySelector("#search")
 const responseDiv = document.querySelector("#search-bar__response")
+const modal = document.querySelector("#modal")
+const showModalBtn = document.querySelector("#show-modal")
+const hideModalBtn = document.querySelector("#hide-modal")
 
 // Header input focus
 searchInput.addEventListener('focus', () => {
@@ -70,3 +73,19 @@ const subscriptionSwiper = new Swiper('.subscription-swiper', {
 // Profile Tabs
 
 const connectTabs = new Tabs();
+
+// Modal fucntions
+const showModal = () => {
+  if (modal.classList.contains('hide')) {
+    modal.classList.remove('hide')
+  }
+}
+
+const hideModal = () => {
+  if (!modal.classList.contains('hide')) {
+    modal.classList.add('hide')
+  }
+}
+
+showModalBtn.addEventListener('click', showModal)
+hideModalBtn.addEventListener('click', hideModal)

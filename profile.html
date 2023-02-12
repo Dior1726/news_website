@@ -45,11 +45,34 @@
     <div class="container flex justify-between align-center">
       <div class="search-bar">
         <i class="ri-search-2-line"></i>
-        <input type="text" name="Search" id="search" placeholder="Поиск" />
+        <input type="text" class="search-bar__input" name="Search" id="search" placeholder="Поиск" />
+        <div class="search-bar__response" id="search-bar__response">
+          <div class="response-item">
+            <div class="response-item__title">Новости</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+            <div class="response-item__text">Работу ТЭЦ Экибастуза обещают...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Блоги</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+            <div class="response-item__text">Выживут ли криптофермы при новом...</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Издания</div>
+            <div class="response-item__text">NUR.KZ</div>
+            <div class="response-item__text">Forbes</div>
+          </div>
+          <div class="response-item">
+            <div class="response-item__title">Авторы</div>
+            <div class="response-item__text">Бауыржан Батырбалинов</div>
+            <div class="response-item__text">Руслан Абилкайыров</div>
+          </div>
+        </div>
       </div>
 
       <div class="flex gap-3">
-        <button class="btn-square">
+        <button class="btn btn-square">
           <i class="ri-add-line"></i>
         </button>
         <a href="./profile.html" class="profile-link">
@@ -84,7 +107,7 @@
           <button data-tab="news" class="btn-tab">
             Мои новости
           </button>
-          <button data-tab="information" class="btn-tab">
+          <button data-tab="blog" class="btn-tab">
             Мои блоги
           </button>
         </div>
@@ -232,6 +255,110 @@
 
         <div class="newest-card">
           <img src="./assets/bus.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newest b-tab" id="blog">
+    <div class="container">
+      <div class="flex align-center justify-between newest-header">
+        <h2 class="subtitle">
+          <i class="ri-folder-line subtitle-icon"></i>
+          Мои блоги
+        </h2>
+        <button class="btn btn-outline">Посмотреть все</button>
+      </div>
+
+      <div class="newest-content">
+        <div class="newest-card">
+          <img src="./assets/Photo12.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/Photo2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/newsPhoto2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/freezeNews.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/sport.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/bus.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Работу ТЭЦ Экибастуза обещают стабилизировать до конца января
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/Photo12.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Лайв</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан и и Кыргызстан перепутали на "Мисс Вселенная" в США
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/Photo2.png" alt="newsPhoto" class="newest-background" />
+          <div class="card-header">Sport</div>
+          <div class="card-bottom">
+            <h3 class="card-title">
+              Казахстан завоевал «золото» Универсиады в Лейк-Плэсиде
+            </h3>
+          </div>
+        </div>
+
+        <div class="newest-card">
+          <img src="./assets/newsPhoto2.png" alt="newsPhoto" class="newest-background" />
           <div class="card-header">Лайв</div>
           <div class="card-bottom">
             <h3 class="card-title">
