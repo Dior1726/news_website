@@ -1,4 +1,4 @@
-(function(){
+ (function(){
 
   var doc = document.documentElement;
   var w = window;
@@ -36,16 +36,16 @@
 
   var toggleHeader = function(direction, curScroll) {
 
-    
-
-    if (direction === 2 && curScroll > 160) { 
+   if (direction === 2 && curScroll > 160) { 
       //replace 52 with the height of your header in px
       header.classList.add('hide');
       header.classList.remove('show');
+      header.classList.remove('initial')
       prevDirection = direction;
     } else if (direction === 1) {
       header.classList.remove('hide');
       header.classList.add('show');
+      header.classList.remove('initial')
       prevDirection = direction;
     }
   };

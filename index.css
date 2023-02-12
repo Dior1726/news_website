@@ -28,6 +28,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 img {
@@ -49,6 +50,7 @@ button {
 
 .btn {
   transition: all .2s ease;
+  color: var(--black);
 }
 
 .btn:hover {

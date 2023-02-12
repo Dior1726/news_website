@@ -5,6 +5,7 @@ const showModalBtn = document.querySelector("#show-modal")
 const hideModalBtn = document.querySelector("#hide-modal")
 const profileBtn = document.querySelector("#profile-btn")
 const profileMenu = document.querySelector("#profile-menu")
+const body = document.querySelector('body')
 
 // Header input focus
 searchInput.addEventListener('focus', () => {
@@ -78,12 +79,14 @@ const connectTabs = new Tabs();
 
 // Modal fucntions
 const showModal = () => {
+  body.style.position = 'fixed'
   if (modal.classList.contains('hide')) {
     modal.classList.remove('hide')
   }
 }
 
 const hideModal = () => {
+  body.style.position = 'relative'
   if (!modal.classList.contains('hide')) {
     modal.classList.add('hide')
   }

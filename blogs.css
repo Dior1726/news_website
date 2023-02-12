@@ -132,6 +132,22 @@ button {
   background: var(--white);
 }
 
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: all .3s ease;
+}
+
+#header.show {
+  top: 0;
+}
+
+#header.hide {
+  top: -160px;
+}
+
 .bottom-header .container {
   width: 100%;
 }
@@ -293,7 +309,7 @@ button {
 /* Post section */
 
 .post-section {
-  padding: 60px 0 100px;
+  padding: 220px 0 100px;
 }
 
 .post-title {

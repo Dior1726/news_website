@@ -132,6 +132,22 @@ button {
   background: var(--white);
 }
 
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: all .3s ease;
+}
+
+#header.show {
+  top: 0;
+}
+
+#header.hide {
+  top: -160px;
+}
+
 .bottom-header .container {
   width: 100%;
 }
@@ -302,6 +318,11 @@ button {
 /* Tabs Style */
 
 /* User */
+
+.user-section {
+  padding-top: 220px;
+}
+
 .max-w-650 {
   max-width: 650px;
   width: 100%;
