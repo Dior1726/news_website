@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -101,9 +102,6 @@ button {
   background-color: var(--black);
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .nav {
@@ -132,9 +130,6 @@ button {
   height: 80px;
   border-bottom: 1px solid var(--light-gray);
   background: var(--white);
-  position: sticky;
-  top: 80px;
-  z-index: 100;
 }
 
 .bottom-header .container {
