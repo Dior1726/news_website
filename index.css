@@ -101,9 +101,6 @@ button {
   background-color: var(--black);
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .nav {
@@ -132,9 +129,22 @@ button {
   height: 80px;
   border-bottom: 1px solid var(--light-gray);
   background: var(--white);
-  position: sticky;
-  top: 80px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 100;
+  transition: all .3s ease;
+}
+
+#header.show {
+  top: 0;
+}
+
+#header.hide {
+  top: -160px;
 }
 
 .bottom-header .container {
@@ -299,6 +309,7 @@ button {
 
 .trend-header {
   margin-bottom: 30px;
+  padding-top: 160px;
 }
 
 .subtitle {
