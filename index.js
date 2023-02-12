@@ -80,6 +80,10 @@ const connectTabs = new Tabs();
 // Modal fucntions
 const showModal = () => {
   body.style.position = 'fixed'
+  body.style.left = '0'
+  body.style.right = '0'
+  body.style.top = '0'
+  body.style.bottom = '0'
   if (modal.classList.contains('hide')) {
     modal.classList.remove('hide')
   }
