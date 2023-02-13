@@ -96,6 +96,17 @@ button {
   padding: 0 10px;
 }
 
+/* Tabs Style */
+.b-tab {
+  display: none;
+}
+
+.b-tab.active {
+  display: block;
+}
+
+/* Tabs Style */
+
 /* Header */
 .header {
   width: 100%;
@@ -481,15 +492,24 @@ button {
   border-radius: 20px;
   transition: all 0.2s ease;
   color: initial;
+  cursor: pointer;
 }
 
 .category-section .swiper-slide:hover {
   background: var(--gray);
 }
 
+.category-section .swiper-slide.active {
+  background: var(--gray);
+}
+
 /* Category Section */
 
 /* Subscription Section */
+
+.subscription-section {
+  padding-bottom: 60px;
+}
 
 .subscription-section .swiper {
   margin: 0 auto;
@@ -609,6 +629,10 @@ button {
 
 .newest-header {
   margin-bottom: 30px;
+}
+
+.newest {
+  padding-bottom: 100px;
 }
 
 .newest-content {
