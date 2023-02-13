@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <!-- Style css -->
-  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./unlogged.css" />
   <title>News App</title>
 </head>
 
@@ -72,47 +72,9 @@
           </div>
         </div>
 
-        <div class="flex gap-3">
-          <button class="btn btn-square" id="show-modal">
-            <i class="ri-add-line"></i>
-          </button>
-          <div class="profile-link" id="profile-btn">
-            <img src="./assets/profileMini.png" alt="Profile" />
-
-            <div class="profile-menu" id="profile-menu">
-              <div class="profile-menu__item">
-                <a href="./profile.html" class="menu-item">
-                  <i class="ri-user-line"></i>
-                  Профиль
-                </a>
-                <a href="/" class="menu-item">
-                  <i class="ri-newspaper-line"></i>
-                  Мои новости
-                </a>
-                <a href="/" class="menu-item">
-                  <i class="ri-edit-box-line"></i>
-                  Мой блог
-                </a>
-              </div>
-              <div class="profile-menu__item">
-                <a href="/" class="menu-item">
-                  <i class="ri-shield-check-line"></i>
-                  Соглашения
-                </a>
-                <a href="/" class="menu-item">
-                  <i class="ri-question-line"></i>
-                  Помощь
-                </a>
-              </div>
-              <div class="profile-menu__item">
-                <a href="/" class="menu-item">
-                  <i class="ri-logout-box-r-line"></i>
-                  Выйти
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a href="./index.html" class="btn-login">
+          Регистрация / Вход
+        </a>
       </div>
     </section>
   </div>
@@ -187,45 +149,45 @@
       </div>
 
       <div class="swiper-wrapper">
-        <div class="swiper-slide" data-tab="education">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/student.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Образование</h6>
-        </div>
+        </a>
 
-        <div class="swiper-slide" data-tab="sport">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/cycle.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Спорт</h6>
-        </div>
+        </a>
 
-        <div class="swiper-slide" data-tab="business">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/portfel.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Бизнес</h6>
-        </div>
+        </a>
 
-        <div class="swiper-slide">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/mask.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Культура</h6>
-        </div>
+        </a>
 
-        <div class="swiper-slide">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/list.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Политика</h6>
-        </div>
+        </a>
 
-        <div class="swiper-slide">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/smile.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Юмор</h6>
-        </div>
+        </a>
 
-        <div class="swiper-slide">
+        <a href="/" class="swiper-slide">
           <img src="./assets/logo/smile.png" alt="student" class="category-card__img" />
           <h6 class="category-card__title">Юмор 2</h6>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="subscription-section b-tab active" id="education">
+  <section class="subscription-section">
     <div class="subscription-swiper swiper">
       <div class="flex align-center justify-between subscription-header">
         <h2 class="subtitle">
@@ -386,7 +348,7 @@
     </div>
   </section>
 
-  <section class="newest b-tab active" id="sport">
+  <section class="newest">
     <div class="container">
       <div class="flex align-center justify-between newest-header">
         <h2 class="subtitle">
@@ -490,7 +452,7 @@
     </div>
   </section>
 
-  <section class="business b-tab active" id="business">
+  <section class="business">
     <div class="container">
       <div class="flex align-center justify-between business-header">
         <h2 class="subtitle">
