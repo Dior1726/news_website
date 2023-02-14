@@ -843,6 +843,7 @@ button {
   gap: 30px;
   padding-bottom: 20px;
   z-index: 1001;
+  overflow-y: auto;
 }
 
 .modal-header {
@@ -889,7 +890,7 @@ input[type="file"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -964,6 +965,11 @@ input[type="file"] {
 /* Media Queries */
 @media screen and (max-width: 768px) {
 
+  .modal-content {
+    height: 90%;
+    overflow-y: auto;
+  }
+
   .newest-content,
   .business-content {
     grid-template-columns: 1fr 1fr;
@@ -999,6 +1005,16 @@ input[type="file"] {
 
   .modal-body {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-bar {
+    width: 150px;
+  }
+
+  .search-bar__response {
+    width: 350px;
   }
 }
 

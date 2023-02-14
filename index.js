@@ -96,8 +96,10 @@ const hideModal = () => {
   }
 }
 
-showModalBtn.addEventListener('click', showModal)
-hideModalBtn.addEventListener('click', hideModal)
+if (showModalBtn) {
+  showModalBtn.addEventListener('click', showModal)
+  hideModalBtn.addEventListener('click', hideModal)
+}
 
 // profile button
 
@@ -109,4 +111,6 @@ const toggleProfileMenu = () => {
   }
 }
 
-profileBtn.addEventListener('click', toggleProfileMenu)
+if (profileBtn) {
+  profileBtn.addEventListener('click', toggleProfileMenu)
+}
