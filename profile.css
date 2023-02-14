@@ -339,6 +339,8 @@ button {
 .user-avatar img {
   width: 128px;
   height: 128px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .avatar-action {
@@ -732,6 +734,11 @@ input[type="file"] {
 
 @media screen and (max-width: 768px) {
 
+  .modal-content {
+    height: 90%;
+    overflow-y: auto;
+  }
+
   .newest-content,
   .business-content {
     grid-template-columns: 1fr 1fr;
@@ -779,6 +786,16 @@ input[type="file"] {
 
   .modal-body {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-bar {
+    width: 150px;
+  }
+
+  .search-bar__response {
+    width: 350px;
   }
 }
 

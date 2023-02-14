@@ -535,6 +535,10 @@ button {
   margin-bottom: 30px;
 }
 
+.post-comments__body .comment-item.replay {
+  margin-left: 60px;
+}
+
 .post-comments__body .comment-header {
   display: flex;
   justify-content: space-between;
@@ -590,6 +594,16 @@ button {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+}
+
+.comment-footer button {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: var(--dark-gray);
+  margin-top: 7px;
+  background: none;
+  border: none;
 }
 
 .comment-load {
@@ -819,6 +833,12 @@ input[type="file"] {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
+  .modal-content {
+    height: 90%;
+    overflow-y: auto;
+  }
+
   .post-content {
     grid-template-columns: 1fr;
   }
