@@ -18,10 +18,21 @@ function Tabs() {
   }
 
   var change = function(e) {
-    clear();
-    e.target.classList.add('active');
-    var id = e.currentTarget.getAttribute('data-tab');
-    document.getElementById(id).classList.add('active');
+    if (e.target.classList.contains('active')) {
+      var menuElements = document.querySelectorAll('[data-tab]');
+      
+
+      for(var i = 0; i < menuElements.length ; i++) {
+        var id = menuElements[i].getAttribute('data-tab');
+        document.getElementById(id).classList.add('active');
+      }
+      e.target.classList.remove('active')
+    } else {
+      clear();
+      e.target.classList.add('active');
+      var id = e.currentTarget.getAttribute('data-tab');
+      document.getElementById(id).classList.add('active');
+    }
   }
 
   bindAll();
