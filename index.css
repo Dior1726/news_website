@@ -627,6 +627,10 @@ button {
 
 /* Subscription Section */
 
+.ghost.active {
+  display: none;
+}
+
 /* Newest Section */
 
 .newest-header {

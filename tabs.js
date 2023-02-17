@@ -22,23 +22,18 @@ function Tabs() {
 
   var change = function(e) {
     var ghostElements = document.querySelectorAll('.ghost')
-    isActive = true
 
-    if (e.target.classList.contains('active') && isActive) {
-      for (var i = 0; i < ghostElements.length; i++) {
-        ghostElements[i].style.display = 'block'
+    if (e.target.classList.contains('active')) {
+      for(var i = 0; i < ghostElements.length ; i++) {
+        ghostElements[i].classList.remove('active');
       }
     } else {
       clear();
       e.target.classList.add('active');
       var id = e.currentTarget.getAttribute('data-tab');
       document.getElementById(id).classList.add('active');
-      
-      for (var i = 0; i < ghostElements.length; i++) {
-        if (isActive && ghostElements[i].style.display == 'block') {
-          ghostElements[i].style.display = 'none'
-          console.log()
-        }
+      for(var i = 0; i < ghostElements.length ; i++) {
+        ghostElements[i].classList.add('active');
       }
     }
   }
