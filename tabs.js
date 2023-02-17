@@ -1,6 +1,9 @@
 'use strict';
 
 function Tabs() {
+
+  var isActive = false
+
   var bindAll = function() {
     var menuElements = document.querySelectorAll('[data-tab]');
     for(var i = 0; i < menuElements.length ; i++) {
@@ -18,20 +21,20 @@ function Tabs() {
   }
 
   var change = function(e) {
-    if (e.target.classList.contains('active')) {
-      var menuElements = document.querySelectorAll('[data-tab]');
-      
+    var ghostElements = document.querySelectorAll('.ghost')
 
-      for(var i = 0; i < menuElements.length ; i++) {
-        var id = menuElements[i].getAttribute('data-tab');
-        document.getElementById(id).classList.add('active');
+    if (e.target.classList.contains('active')) {
+      for(var i = 0; i < ghostElements.length ; i++) {
+        ghostElements[i].classList.remove('active');
       }
-      e.target.classList.remove('active')
     } else {
       clear();
       e.target.classList.add('active');
       var id = e.currentTarget.getAttribute('data-tab');
       document.getElementById(id).classList.add('active');
+      for(var i = 0; i < ghostElements.length ; i++) {
+        ghostElements[i].classList.add('active');
+      }
     }
   }
 
